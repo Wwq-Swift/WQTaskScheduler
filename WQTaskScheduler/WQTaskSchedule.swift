@@ -47,7 +47,7 @@ class WQTaskSchedule {
     }
     
     /// 添加任务  (提供一个默认优先级)
-    func addTask(_ task: @escaping WQTaskBlock, withPriority: WQTaskPriority = .tDefault) {
+    func addTask(withPriority: WQTaskPriority = .tDefault, _ task: @escaping WQTaskBlock) {
         strategy?.addTask(task, withPriority: withPriority)
     }
     
@@ -61,6 +61,7 @@ class WQTaskSchedule {
             strategy.isEmpty == false else {
             return
         }
+        /// 根据每次消息循环 添加的 主任务个数
         for _ in 0..<num {
             taskQueue.addOperation {
                 strategy.executeTask()

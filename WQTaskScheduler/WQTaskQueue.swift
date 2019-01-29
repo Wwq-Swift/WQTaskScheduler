@@ -39,7 +39,7 @@ class WQTaskStack: WQTaskBaseQueue, WQTaskSchedulerBaseProtocol {
         pthread_mutex_lock(&lock)
         if maxTaskNum > 0 {
             while deque.count > maxTaskNum {
-                deque.popLast()
+                deque.popFront()
             }
         }
         deque.enqueue(task)
