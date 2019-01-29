@@ -16,6 +16,7 @@
 		845FAC2521E735B9000C6C6B /* WQTaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FAC2421E735B9000C6C6B /* WQTaskQueue.swift */; };
 		846B2BC721FFEECF00A3588C /* WQTaskSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B2BC621FFEECF00A3588C /* WQTaskSchedule.swift */; };
 		846B2BC92200036800A3588C /* WQTaskPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B2BC82200036800A3588C /* WQTaskPriorityQueue.swift */; };
+		846B2BCC220043CB00A3588C /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B2BCB220043CB00A3588C /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		845FAC2421E735B9000C6C6B /* WQTaskQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WQTaskQueue.swift; sourceTree = "<group>"; };
 		846B2BC621FFEECF00A3588C /* WQTaskSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WQTaskSchedule.swift; sourceTree = "<group>"; };
 		846B2BC82200036800A3588C /* WQTaskPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WQTaskPriorityQueue.swift; sourceTree = "<group>"; };
+		846B2BCB220043CB00A3588C /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,21 @@
 				845FAC2221E731F8000C6C6B /* WQTaskSchedulerBaseProtocol.swift */,
 				845FAC2421E735B9000C6C6B /* WQTaskQueue.swift */,
 				846B2BC82200036800A3588C /* WQTaskPriorityQueue.swift */,
+				846B2BCA220043B000A3588C /* Queue */,
 				845FAC1421E73155000C6C6B /* Main.storyboard */,
 				845FAC1721E73157000C6C6B /* Assets.xcassets */,
 				845FAC1921E73157000C6C6B /* LaunchScreen.storyboard */,
 				845FAC1C21E73157000C6C6B /* Info.plist */,
 			);
 			path = WQTaskScheduler;
+			sourceTree = "<group>";
+		};
+		846B2BCA220043B000A3588C /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				846B2BCB220043CB00A3588C /* Queue.swift */,
+			);
+			path = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846B2BC92200036800A3588C /* WQTaskPriorityQueue.swift in Sources */,
+				846B2BCC220043CB00A3588C /* Queue.swift in Sources */,
 				845FAC2521E735B9000C6C6B /* WQTaskQueue.swift in Sources */,
 				845FAC2321E731F8000C6C6B /* WQTaskSchedulerBaseProtocol.swift in Sources */,
 				845FAC1321E73155000C6C6B /* ViewController.swift in Sources */,
